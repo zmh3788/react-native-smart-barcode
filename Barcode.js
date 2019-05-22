@@ -7,17 +7,16 @@
 
 
 import React, {
-    PropTypes,
-    Component,
+    Component
 } from 'react'
 import {
     View,
     requireNativeComponent,
     NativeModules,
     AppState,
-    Platform,
+    Platform
 } from 'react-native'
-
+import PropTypes from 'prop-types'
 const BarcodeManager = Platform.OS == 'ios' ? NativeModules.Barcode : NativeModules.CaptureModule
 
 
